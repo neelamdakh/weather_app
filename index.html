@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <form class="card">
+            <input type="text" placeholder="Enter City" required>
+            <button type="submit">Search</button>
+        </form>
+        <div class="weather_info">
+            <span>
+                <h1>32.5°C</h1>
+                <h2>Indore</h2>
+            </span>
+            <div class="wheather_desc">
+                <img src="./assests/3d-weather-icon-day-with-rain-free-png.webp" alt="image">
+                <p>Sunny</p>
+            </div>
+        </div>
+        <div class="forecast_info">
+            <table id="tableData">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Date</th>
+                        <th scope="col">Maximum Temp.</th>
+                        <th scope="col">Minimum Temp.</th>
+                        <th scope="col">Average Temp.</th>
+                        <th scope="col">Average Humidity</th>
+                        <th scope="col">Text</th>
+                        <th scope="col">Image</th>
+
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Delicious+Handrawn&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+.container{
+   height: 160vh;
+   width: 100%; 
+   background: linear-gradient(to right, #b2fefa, #0ed2f7);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   
+ 
+}
+.card{
+    width: 1000px;
+    height: 160px;
+    background-color: #138ea7;
+    padding: 20px 40px;
+    margin-top: 50px;
+    
+   
+   
+}
+.card input
+{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    outline: none;
+    font-size: 14px;
+}
+
+
+.card button{
+    width: 100%;
+    padding:  10px;
+    margin-top: 15px;
+    background-color: #08323a;
+    color: white;
+    border: none;
+
+}
+.card button:hover{
+    cursor: pointer ;
+    background-color: #04171b;
+}
+
+.weather_info
+{
+
+    width: 1000px;
+    height: 160px;
+    background-color: #138ea7;
+   color: white;
+    margin-top: 10px;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px 40px;
+    
+}
+.weather_info h1
+{
+    font-size: 36px;
+    font-weight: 700;
+}
+.weather_info h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.wheather_desc
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wheather_desc img{
+    height: 80px;
+}
+.wheather_desc p
+{
+    font-size: 16px;
+    font-weight: 600;
+}
+.forecast_info
+{
+    
+    margin-top: 20px;
+    width: 1000px;
+    height: 1000px;
+    display: none;
+}
+#tableData
+{
+    border-collapse: collapse;
+    width: 100%;
+}
+#tableData td, #tableData th {
+    border-bottom: 1px solid #138ea7;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  #tableData tr:nth-child(even){background-color: #cfdcdf;}
+  
+  #tableData tr:hover {background-color: #056376;}
+  
+  #tableData th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #04171b;
+    color: white;
+
+  }
